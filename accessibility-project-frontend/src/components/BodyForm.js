@@ -20,39 +20,39 @@ export default function BodyForm() {
   <div>
     <Form>
       <Form.Group className="mb-3" controlId="formFirstName">
-        <Form.Label>First Name
+        <Form.Label>First Name * 
         <Form.Control type="firstName" placeholder="First Name" value={firstName} onChange={(e) => setFirstName(e.target.value)}/>
         </Form.Label>
 
       <Form.Group className="mb-3" controlId="formlastName">
-        <Form.Label>Last Name
+        <Form.Label>Last Name * 
         <Form.Control type="lastName" placeholder="Last Name" value={lastName} onChange={(e) => setLastName(e.target.value)}/>
         </Form.Label>
       </Form.Group>
       <Form.Group>
-        <Form.Label>Date of Birth
+        <Form.Label>Date of Birth * 
         <Form.Control type="date" name="date_of_birth" onChange={(e) => setDateOB(e.target.value)}/>
         </Form.Label>
       </Form.Group>
       <Form.Group>
         <Form.Label>
-          Email Address
+          Email Address 
           <Form.Control type="text" name="email_address" placeholder="Email Address" value={emailAddress} onChange={(e) => setEmailAddress(e.target.value)}/>
         </Form.Label>
       </Form.Group>
       <Form.Group>
-        <Form.Label>Phone Number
+        <Form.Label>Phone Number 
         <Form.Control type="tel" pattern="[0-9]*" placeholder="Phone Number" value={phoneNumber} onChange={(e) => setPhoneNumber(e.target.value)}/>
         </Form.Label>
       </Form.Group>
 
       <Form.Group>
-        <Form.Label>Zipcode 
+        <Form.Label>Zipcode  
         <Form.Control type="tel" pattern="[0-9]*" placeholder="Zipcode" value={zipCode} onChange={(e) => setZipCode(e.target.value)}/>
         </Form.Label>
       </Form.Group>
       <Form.Group>
-        <Form.Label>Preferred Language
+        <Form.Label>Preferred Language 
         <Form.Select>
           <option value="english">English</option>
           <option value="french">French</option>
